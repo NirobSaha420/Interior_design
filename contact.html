@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="Image/webp" href="./Images/logo.webp">
+
+    <!-- Optimized Google Font Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Kanit", serif;
+        }
+        /* Full page background with dark color */
+        body, html {
+            height: 100%;
+            background: #f0f0f0; /* Dark background */
+            display: flex;
+            justify-content: center;
+        }
+        /* Flexbox layout for the names */
+        .names {
+            display: flex;
+            justify-content: space-between;
+            gap: 1vw;
+        }
+        /* Form container and form box styling */
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        /* Glassmorphism effect on form box */
+        .form-box {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); /* For Safari */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        /* Header style */
+        h1 {
+            margin-bottom: 20px;
+            font-family: "Cinzel", serif;
+            font-size: 24px;
+            color: #000;
+        }
+        /* Input fields */
+        .textbox {
+            margin-bottom: 20px;
+        }
+        .textbox input, .textbox select, .textbox textarea {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.4);
+            color: #2b2d42;
+            outline: none;
+        }
+        .textbox input:focus, .textbox select:focus, .textbox textarea:focus {
+            border-color: #a88333cc; /* Focus effect */
+        }
+        .textbox textarea {
+            resize: vertical;
+        }
+        .continent-style{
+            color: #000;
+            font-family: "Cinzel", serif;
+        }
+        /* Submit button */
+        .btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #d60020ee;
+            color: white;
+            font-family: "Cinzel", serif;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #b43434;
+        }
+        /* Error message style */
+        .error-message {
+            color: red;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            .names {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .textbox input, .textbox select, .textbox textarea, .btn {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-box">
+            <h1>Hey, Register here:</h1>
+            <form id="registration-form">
+                <!-- First Name and Last Name -->
+                <div class="names">
+                    <div class="textbox">
+                        <input type="text" id="first-name" placeholder="First Name" name="first-name" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="text" id="last-name" placeholder="Last Name" name="last-name" required>
+                    </div>
+                </div>
+                
+                <!-- Email -->
+                <div class="textbox">
+                    <input type="email" id="email" placeholder="Email" name="email" required>
+                </div>
+
+                <!-- Continent Selection -->
+                <div class="textbox continent-style">
+                    <label for="continent" class="continent-style">Select Continent:</label>
+                    <select class="continent-style" name="continent" required>
+                        <option value="">Select Continent</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Africa">Africa</option>
+                        <option value="North America">North America</option>
+                        <option value="South America">South America</option>
+                        <option value="Antarctica">Antarctica</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="textbox">
+                    <input type="tel" id="phone" placeholder="Phone Number" name="phone" required>
+                </div>
+
+                <!-- Message -->
+                <div class="textbox">
+                    <textarea id="message" placeholder="Enter your message" name="address" rows="4"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn">Register</button>
+            </form>
+            <div id="error-message" class="error-message"></div>
+        </div>
+    </div>
+
+
+    <!-- links and libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./JS/jquery.counterup.min.js"></script>
+    <!-- Bootstrap js links -->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <!-- Custom js links -->
+    <script src="./JS/custom.js"></script>
+</body>
+</html>

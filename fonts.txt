@@ -1,0 +1,5 @@
+"Kanit", serif
+
+"Cinzel", serif
+
+"Special Elite", serif

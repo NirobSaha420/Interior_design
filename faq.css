@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cinzel", serif;
+    --theme-Clor1: #d60020ee;
+    --theme-Clor2: #a88333cc;
+}
+section{
+    padding: 7vw 0 0 0;
+    background-color: #fff;
+}
+.sec-headings{
+    text-align: center;
+    font-family: "Kanit", serif;
+    font-size: clamp(16px, 0.711rem + 2.675vw, 80px);
+    margin-bottom: clamp(20px, 4vw, 70px);
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        width: 10vw;
+        height: 1px;
+        background-color: var(--theme-Clor1);
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.right,
+.left{
+    width: 50%;
+}
+.shadow{
+    box-shadow: .5px .5px 10px #666;
+}
+.btnn button{
+    padding: .8vw 3vw;
+    background-color: var(--theme-Clor1);
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    transition: .4s ease;
+    &:hover{
+        color: var(--theme-Clor1);
+        background-color: var(--theme-Clor2);
+    }
+}
+/* navbar */
+.navbar{
+    width: 100vw;
+    position: fixed;
+    z-index: 999;
+    padding: 1.5vw 5vw;
+    background-color: #fff;
+}
+.navbar img{
+    width: 8vw;
+    height: auto;
+}
+.navbar .navbar-brand span{
+    font-size: 1.5vw;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.navbar .navbar-nav .nav-item{
+    margin-right: .5vw;
+    font-weight: 600;
+}
+/* navbar */
+
+/* banner section */
+#banner{
+    padding: 10vw 0;
+    background: url(./Images/faq-background.avif);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#banner .banner-contents h2{
+    text-align: center;
+    color: #fff;
+    font-family: "Kanit", serif;
+    font-size: clamp(25px, 0.3571rem + 4.4643vw, 120px);
+    font-weight: 700;
+    margin-top: 2vw;
+}
+/* banner section */
+
+/* faq section */
+#faq{
+    margin: 0 0 7vw 0;
+}
+#faq .h1-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+.h1-container .btnn button a{
+    text-decoration: none;
+    color: #fff;
+}
+#faq .container{
+  max-width: 70vw;
+}
+.accordion-button{
+    font-size: 1.5vw;
+    font-family: "Kanit", serif;
+}
+#faq h1{
+    width: 60%;
+    margin: 0 0 6vw 0;
+    font-size: 4vw;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+#faq .accordion-button:not(.collapsed){
+  background-color: var(--theme-Clor2);
+}
+#faq .accordion-button:focus{
+  box-shadow: 1px 1px 10px #aaa;
+}
+/* faq section */
