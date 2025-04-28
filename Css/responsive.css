@@ -1,0 +1,257 @@
+/* for small devices , mobile */
+@media (max-width: 425px) { 
+    .btnn button{
+        padding: 1.2vw 3vw;
+        font-size: 2.8vw;
+    }
+    .right,
+    .left{
+        width: auto;
+    }
+    .navbar img{
+        width: 12vw;
+    }
+    .navbar .navbar-brand{
+        padding-top: 0 !important;
+        & > span{
+            font-size: 2.5vw;
+        }
+    }
+    .navbar-toggler-icon{
+        background-size: 50%;
+    }
+    .navbar-toggler{
+        padding: 0 .2vw;
+    }
+    .navbar .navbar-nav .nav-item{
+        font-size: 4vw;
+        & > .nav-link{
+            padding: 1.5vw 0;
+        }
+    }
+    .navbar .dropdown-item{
+        font-size: 4vw;
+    }
+    .dropdown-divider{
+        display: none;
+    }
+    #banner .banner-contents h1{
+        width: 80%;
+        font-size: 8vw;
+        & > span{
+            font-size: 8vw;
+        }
+    }
+    #banner .banner-contents p{
+        width: 90%;
+        font-size: 2.5vw;
+        padding: 3vw 0;
+        margin-top: 3vw;
+    }
+    #service .right,
+    #service .left{
+        width: auto;
+    }
+    #service .container .row .service-contents1,
+    #service .container .row .service-contents2,
+    #service .container .row .service-contents3{
+        flex-direction: column;
+    }
+    #service .container .row .right .sr-texts h4,
+    #service .container .row .right .sr-texts h4,
+    #service .container .row .right .sr-texts h4{
+        font-size: 5vw;
+        text-align: center;
+        margin-top: 4vw;
+    }
+    #service .container .row .right .sr-texts p,
+    #service .container .row .right .sr-texts p,
+    #service .container .row .right .sr-texts p{
+        width: 100%;
+        font-size: 2.4vw;
+        text-align: center;
+        margin-bottom: 12vw;
+    }
+    #portfolio .container .row,
+    #testimonials .container .row,
+    #team .container .row{
+        gap: 8vw;
+    }
+    #portfolio .port-contents .texts h4{
+        font-size: 4vw;
+        padding: 3vw 0;
+    }
+    #portfolio .port-contents .texts p{
+        font-size: 2.2vw;
+        line-height: 3vw;
+    }
+    #completed .row .c-contents{
+        flex-direction: column;
+    }
+    .c-contents .right .counter-div{
+        padding-top: 4vw;
+        & > .texts > h4{
+            font-size: 5vw;
+            margin: 0;
+        }
+        & > .texts > span{
+            font-size: 4vw;
+            margin-left: .5vw;
+        }
+        & > p{
+            font-size: 2.5vw;
+            margin: 2vw 0 6vw 0;
+        }
+    }
+    #testimonials .testi-contents h4,
+    #team .team-contents .texts h4{
+        font-size: 6vw;
+    }
+    #testimonials .testi-contents .texts1{
+        padding: 6vw;
+        & > p{
+            font-size: 3vw;
+            text-align: center;
+        }
+        & > .profile{
+            justify-content: center;
+            padding: 3vw 0;
+        }
+        & > .profile > .texts2 > p,
+        & > .profile > .texts2 > span{
+            font-size: 3.5vw;
+        }
+        & > .profile > .img > img{
+             width: 12vw;
+            height: 12vw;
+        }
+    }
+    #team .team-contents{
+        border-radius: 15px;
+        & > .texts > p{
+            font-size: 3.3vw;
+            font-weight: 600;
+            padding-bottom: 5vw;
+        }
+        & > .img{
+            display: flex;
+            justify-content: center;
+            & > img{
+                width: 65%;
+                margin: 10vw 0 5vw 0;
+            }
+        }
+    }
+    #footer .footer-contents{
+        & > h4{
+            font-size: 3.2vw;
+        }
+        & > p{
+            font-size: 2.5vw;
+            text-align: center;
+        }
+        & > .social > #social-p{
+            font-size: 2.4vw;
+        }
+        & > .img{
+            display: flex;
+            justify-content: center;
+        }
+        & > .img > img{
+            width: 50%;
+            border-radius: 5px;
+        }
+        & > .btnn > button{
+            padding: 1vw 2vw;
+        }
+    }
+    #footer .footer-contents ul li{
+        font-size: 2.5vw;
+    }
+    #footer .width50{
+        width: 50%;
+        margin: 10vw 0 5vw 0;
+    }
+    #footer .grid-it-center{
+        display: flex;
+        justify-content: center;
+    }
+    #copyright .copyright-contents{
+        & > .copyright-texts{
+            padding: 5vw 0 3vw 0;
+            align-items: center;
+            & > span{
+                font-size: 1.8vw;
+            }
+        }
+        & > .copyright-texts > p{
+            font-size: 1.7vw;
+        }
+        & > .copyright-icons{
+            & > ul > li > a > span{
+            font-size: 2.5vw;
+            }
+        }
+    }
+    /* about sub navs */
+    #certificate .container .certi-contents{
+        flex-direction: column-reverse;
+        & > .left > .texts{
+            text-align: center;
+            & > h4{
+                font-size: 3.2vw;
+                margin: 6vw 0;
+            }
+            & > p{
+                font-size: 2.3vw;
+                line-height: 3.5vw;
+                letter-spacing: 1px;
+            }
+            & > .btnn > button{
+                padding: 3vw 5vw;
+                font-size: 3vw;
+            }
+        }
+        & > .right > .img{
+            display: flex;
+            justify-content: center;
+        }
+        & > .right > .img > img{
+            width: 80%;
+            &:hover{
+                transform: none;
+            }
+        }
+    }
+    /* about sub navs */
+    /* faq sub navs */
+    #faq .container{
+        max-width: 90vw;
+    }
+    #faq .accordion-button{
+        font-size: 3.5vw;
+    }
+    #faq .accordion-body{
+        font-size: 3vw;
+    }
+    /* faq sub navs */
+}
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+ }
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    
+ }
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    
+ }
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+    
+ }

@@ -18,7 +18,7 @@ section{
 .sec-headings{
     text-align: center;
     font-family: "Kanit", serif;
-    font-size: clamp(16px, 0.711rem + 2.675vw, 80px);
+    font-size: clamp(26px, 0.711rem + 2.675vw, 80px);
     margin-bottom: clamp(20px, 4vw, 70px);
     position: relative;
     &::before{
@@ -154,7 +154,7 @@ section{
     & > p{
         height: 100%;
         width: auto;
-        font-size: clamp(5px, 1.4vw, 20px);
+        font-size: clamp(12px, 1.4vw, 20px);
         font-weight: 900;
         display: flex;
         justify-content: center;
@@ -298,7 +298,7 @@ section{
     background-repeat: no-repeat;
     background-color: #ffffffcc;
     padding: 2vw;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 #testimonials .testi-contents h4{
     color: #fff;
@@ -325,13 +325,13 @@ section{
     margin-bottom: .5vw;
 }
 #testimonials .testi-contents .profile .img{
-    padding: 20px;
+    padding: 1.5vw;
     border-radius: 10px;
     text-align: center;
 }
 #testimonials .testi-contents .profile .img img{
-    width: 70px;
-    height: 70px;
+    width: 5vw;
+    height: 5vw;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid var(--theme-Clor1);

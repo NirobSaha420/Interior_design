@@ -91,7 +91,7 @@ section{
     font-family: "Kanit", serif;
     font-size: clamp(25px, 0.3571rem + 4.4643vw, 120px);
     font-weight: 700;
-    margin-top: 2vw;
+    margin-top: 12vw;
 }
 /* banner section */
 
@@ -101,17 +101,21 @@ section{
     transition: .3s ease;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
+    transition: .3s ease;
     &:hover{
         box-shadow: 1px 1px 15px #999;
     }
+}
+.port-contents .btnn button{
+    width: 100%;
 }
 #portfolio .port-contents img{
     width: 100%;
     height: 50%;
 }
 .port-contents .texts h4{
-    /* font-family: "Kanit", serif; */
     font-size: 2vw;
+    font-weight: 600;
     padding: 1.5vw 0;
 }
 .port-contents .texts p{
@@ -119,7 +123,7 @@ section{
     font-weight: 500;
     letter-spacing: 1px;
     line-height: 1.5vw;
-    padding-bottom: 3vw;
+    padding-bottom: 1.5vw;
 }
 .port-contents .btnn{
     display: flex;
@@ -159,6 +163,7 @@ section{
     font-family: "Cinzel", serif;
     font-size: 2vw;
     font-weight: 700;
+    text-transform: uppercase;
     margin-bottom: 3vw;
 }
 .certi-contents .right .img img{
