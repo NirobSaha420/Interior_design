@@ -1,8 +1,7 @@
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -20,6 +19,7 @@ section{
     font-family: "Kanit", serif;
     font-size: clamp(26px, 0.711rem + 2.675vw, 80px);
     margin-bottom: clamp(20px, 4vw, 70px);
+    text-shadow: var(--theme-Clor2) 1px 10px 40px;
     position: relative;
     &::before{
         position: absolute;
@@ -52,7 +52,7 @@ section{
     }
     &:hover{
         background-color: #fff;
-        border: 1px dotted var(--theme-Clor1);
+        border: 1px solid var(--theme-Clor1);
     }
     &:hover a{
         color: var(--theme-Clor1);
@@ -83,42 +83,67 @@ section{
 
 /* banner section */
 #banner{
-    padding: 20vw 0;
+    padding: 15vw 0;
     background: url(../Images/background.avif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+#banner .empty{
+    width: 100%;
+}
+#banner .banner-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 #banner .banner-contents h1{
-    width: 60%;
+    text-align: center;
     font-family: "Kanit", serif;
-    font-size: clamp(25px, 0.3571rem + 4.4643vw, 120px);
+    font-size: clamp(25px, 0.459rem + 4.566vw, 120px);
     font-weight: 700;
+    text-shadow: var(--theme-Clor2) 1px 0 50px;
+    line-height: 13vw;
     position: relative;
     &::before{
         position: absolute;
         content: "";
-        width: 15vw;
-        height: 1px;
+        width: 18vw;
+        height: 2px;
         border-radius: 25px;
         background-color: var(--theme-Clor2);
-        bottom: 0;
-        left: 15%;
+        top: 50%;
+        right: 15%;
         transform: rotate(-5deg);
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        width: 18vw;
+        height: 2px;
+        border-radius: 25px;
+        background-color: var(--theme-Clor2);
+        top: 50%;
+        left: 15%;
+        transform: rotate(5deg);
     }
 }
 #banner .banner-contents h1 span{
-    display: inline-block;
-    font-family: "Special Elite", serif;
+    display: block;
+    font-family: "Lora", serif;
     color: var(--theme-Clor2);
-    font-size: clamp(25px, 0.357rem + 4.464vw, 120px);
-    font-weight: 900;
+    font-size: clamp(25px, 0.857rem + 4.964vw, 120px);
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 #banner .banner-contents p{
+    text-align: center;
     width: 50%;
     font-size: 1.2vw;
     font-weight: 500;
     padding: 2.5vw 0;
+    text-shadow: var(--theme-Clor1) 1px 25px 50px;
 }
 /* banner section */
 
@@ -185,6 +210,7 @@ section{
     width: 90%;
     font-size: 1.2vw;
     font-weight: 500;
+    text-shadow: var(--theme-Clor1) 1px 25px 50px;
 }
 /* service section */
 
@@ -217,6 +243,7 @@ section{
     letter-spacing: 1px;
     line-height: 1.5vw;
     padding-bottom: 1.5vw;
+    text-shadow: var(--theme-Clor1) 1px 25px 50px;
 }
 .port-contents .btnn{
     display: flex;
@@ -318,11 +345,13 @@ section{
 #testimonials .testi-contents .texts1 p{
     font-size: 1.2vw;
     font-weight: 500;
+    text-shadow: var(--theme-Clor2) 1px 5px 5px;
 }
 #testimonials .testi-contents .profile .texts2 p{
     font-size: 1.3vw;
     font-weight: 700;
     margin-bottom: .5vw;
+    text-shadow: var(--theme-Clor1) 1px 25px 50px;
 }
 #testimonials .testi-contents .profile .img{
     padding: 1.5vw;
@@ -353,11 +382,13 @@ section{
 .team-contents .texts h4{
     font-size: 2.4vw;
     padding: 1vw 0;
+    text-shadow: var(--theme-Clor2) 1px 5px 10px;
 }
 .team-contents .texts p{
     font-size: 1.4vw;
     font-weight: 500;
     padding-bottom: 1.5vw;
+    text-shadow: var(--theme-Clor1) 1px 5px 20px;
 }
 /* team section */
 
@@ -372,6 +403,7 @@ section{
     color: #fff;
     font-size: 1.6vw;
     margin-bottom: 2vw;
+    text-shadow: var(--theme-Clor2) 1px 5px 5px;
 }
 #footer .footer-contents .img img{
     width: 100%;
@@ -382,9 +414,11 @@ section{
     font-size: 1.2vw;
     font-weight: 600;
     margin-bottom: 2vw;
+    text-shadow: var(--theme-Clor2) 1px 5px 15px;
 }
 #footer .footer-contents #social-p{
     font-weight: 400;
+    text-shadow: none;
 }
 #footer .footer-contents ul li{
     list-style-type: none;
@@ -418,6 +452,7 @@ section{
         transition: .3s ease;
         &:hover{
             box-shadow: 1px 1px 15px #999;
+            border: 1px solid var(--theme-Clor1);
         }
         & > a > span{
             color: white;
@@ -429,6 +464,7 @@ section{
 #copyright{
     padding: 0;
     background-color: #444;
+    text-shadow: var(--theme-Clor1) 1px 0px 25px;
 }
 #copyright .copyright-texts{
     display: flex;

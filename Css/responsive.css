@@ -1,5 +1,8 @@
 /* for small devices , mobile */
-@media (max-width: 425px) { 
+@media (max-width: 425px) {
+    .sec-headings{
+        text-shadow: var(--theme-Clor2) 1px 5px 20px;
+    }
     .btnn button{
         padding: 1.2vw 3vw;
         font-size: 2.8vw;
@@ -36,17 +39,25 @@
         display: none;
     }
     #banner .banner-contents h1{
-        width: 80%;
         font-size: 8vw;
+        text-shadow: var(--theme-Clor2) 1px 0px 25px;
         & > span{
             font-size: 8vw;
+            margin-bottom: 6vw;
+        }
+        &::before{
+            top: 40%;
+        }
+        &::after{
+            top: 40%;
         }
     }
     #banner .banner-contents p{
-        width: 90%;
+        width: 80%;
         font-size: 2.5vw;
         padding: 3vw 0;
         margin-top: 3vw;
+        text-shadow: var(--theme-Clor1) 1px 15px 25px;
     }
     #service .right,
     #service .left{
@@ -71,6 +82,7 @@
         font-size: 2.4vw;
         text-align: center;
         margin-bottom: 12vw;
+        text-shadow: var(--theme-Clor1) 1px 15px 25px;
     }
     #portfolio .container .row,
     #testimonials .container .row,
@@ -84,6 +96,7 @@
     #portfolio .port-contents .texts p{
         font-size: 2.2vw;
         line-height: 3vw;
+        text-shadow: var(--theme-Clor1) 1px 15px 25px;
     }
     #completed .row .c-contents{
         flex-direction: column;
@@ -106,6 +119,7 @@
     #testimonials .testi-contents h4,
     #team .team-contents .texts h4{
         font-size: 6vw;
+        text-shadow: var(--theme-Clor2) 1px 5px 12px;
     }
     #testimonials .testi-contents .texts1{
         padding: 6vw;
@@ -120,6 +134,7 @@
         & > .profile > .texts2 > p,
         & > .profile > .texts2 > span{
             font-size: 3.5vw;
+            text-shadow: var(--theme-Clor1) 1px 15px 35px;
         }
         & > .profile > .img > img{
              width: 12vw;
@@ -132,6 +147,7 @@
             font-size: 3.3vw;
             font-weight: 600;
             padding-bottom: 5vw;
+            
         }
         & > .img{
             display: flex;
@@ -178,7 +194,7 @@
     }
     #copyright .copyright-contents{
         & > .copyright-texts{
-            padding: 5vw 0 3vw 0;
+            padding: 4vw 0 3vw 0;
             align-items: center;
             & > span{
                 font-size: 1.8vw;
