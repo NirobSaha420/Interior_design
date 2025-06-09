@@ -1,7 +1,7 @@
 ## Demo link 
 
 **You can view live demo of the project here :
-[Kubb]([https://nirobsaha420.github.io/Kubb-project/](https://nirobsaha420.github.io/Interior_design/))**
+[Interior design](https://nirobsaha420.github.io/Interior_design/)**
 
 ## License
 
