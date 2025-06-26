@@ -1,8 +1,5 @@
 /* for small devices , mobile */
 @media (max-width: 425px) {
-    .sec-headings{
-        text-shadow: var(--theme-Clor2) 1px 5px 20px;
-    }
     .btnn button{
         padding: 1.2vw 3vw;
         font-size: 2.8vw;
@@ -26,6 +23,10 @@
     .navbar-toggler{
         padding: 0 .2vw;
     }
+    .navbar .navbar-nav{
+        display: flex;
+        align-items: center;
+    }
     .navbar .navbar-nav .nav-item{
         font-size: 4vw;
         & > .nav-link{
@@ -40,16 +41,10 @@
     }
     #banner .banner-contents h1{
         font-size: 8vw;
-        text-shadow: var(--theme-Clor2) 1px 0px 25px;
+        margin-top: 7vw;
         & > span{
             font-size: 8vw;
-            margin-bottom: 6vw;
-        }
-        &::before{
-            top: 40%;
-        }
-        &::after{
-            top: 40%;
+            margin-bottom: 5vw;
         }
     }
     #banner .banner-contents p{
@@ -57,7 +52,6 @@
         font-size: 2.5vw;
         padding: 3vw 0;
         margin-top: 3vw;
-        text-shadow: var(--theme-Clor1) 1px 15px 25px;
     }
     #service .right,
     #service .left{
@@ -82,7 +76,6 @@
         font-size: 2.4vw;
         text-align: center;
         margin-bottom: 12vw;
-        text-shadow: var(--theme-Clor1) 1px 15px 25px;
     }
     #portfolio .container .row,
     #testimonials .container .row,
@@ -96,7 +89,6 @@
     #portfolio .port-contents .texts p{
         font-size: 2.2vw;
         line-height: 3vw;
-        text-shadow: var(--theme-Clor1) 1px 15px 25px;
     }
     #completed .row .c-contents{
         flex-direction: column;
@@ -119,7 +111,12 @@
     #testimonials .testi-contents h4,
     #team .team-contents .texts h4{
         font-size: 6vw;
-        text-shadow: var(--theme-Clor2) 1px 5px 12px;
+    }
+    #testimonials .sub-h_container{
+        flex-direction: column;
+        & > .w-33per{
+            width: 100%;
+        }
     }
     #testimonials .testi-contents .texts1{
         padding: 6vw;
@@ -252,10 +249,210 @@
     }
     /* faq sub navs */
 }
-/* `md` applies to small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
+/* for medium devices, tab */
+@media (min-width: 425.1px) and (max-width: 768px) { 
+    .container{
+        max-width: 90%;
+    }
+    .navbar img{
+        width: 12vw;
+    }
+    .navbar .navbar-brand{
+        padding: 1vw;
+        & > span{
+            font-size: 2.5vw;
+        }
+    }
+    .navbar-toggler-icon{
+        background-size: 50%;
+    }
+    .navbar-toggler{
+        padding: 0 1.3vw;
+    }
+    .navbar .navbar-nav{
+        display: flex;
+        align-items: center;
+    }
+    .navbar .navbar-nav .nav-item{
+        font-size: 2.5vw;
+        & > .nav-link{
+            padding: 1.2vw 0;
+        }
+    }
+    .navbar .dropdown-item{
+        font-size: 2.4vw;
+    }
+    .dropdown-divider{
+        display: none;
+    }
 
- }
+    #portfolio .row {
+        display: grid;
+        grid-template-areas:
+          "heading heading"
+          "r1 r2"
+          "r3 r3";
+          & > .sec-headings{
+            grid-area: heading;
+          }
+      }
+      #portfolio .r-1 { 
+        grid-area: r1;
+        margin-bottom: 3.4vw; /* Gap below first row items */
+        & > .port-contents{
+            width: 93%;
+            }
+        }
+      #portfolio .r-2 { 
+        grid-area: r2; 
+        margin-bottom: 3.4vw; /* Gap below first row items */
+    }
+      #portfolio .r-3 {
+        grid-area: r3;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+    #completed .right,
+    #completed .left{
+        width: auto;
+    }
+    #completed .row .c-contents{
+        flex-direction: column;
+    }
+    .c-contents .right .counter-div{
+        padding-top: 4vw;
+        & > .texts > h4{
+            font-size: 4vw;
+            margin: 0;
+        }
+        & > .texts > span{
+            font-size: 3vw;
+            margin-left: .5vw;
+        }
+        & > p{
+            font-size: 2vw;
+            margin: 2vw 0 6vw 0;
+        }
+    }
+
+
+    #testimonials .sub-h_container{
+        display: block;
+        & > .w-33per{
+            width: 100%;
+        }
+        & > .row{
+            flex-wrap: nowrap;
+            & > .col-lg-6{
+                width: 50%;
+            }
+        }
+    }
+    #testimonials .testi-contents .texts1{
+        /* padding: 6vw; */
+        & > p{
+            font-size: 1.7vw;
+            text-align: center;
+        }
+        & > .profile{
+            justify-content: center;
+        }
+        & > .profile > .texts2 > p,
+        & > .profile > .texts2 > span{
+            font-size: 2vw;
+            text-shadow: var(--theme-Clor1) 1px 15px 35px;
+        }
+        & > .profile > .img > img{
+             width: 7vw;
+            height: 7vw;
+        }
+    }
+
+    #team .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4vw;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    /* Position the third team member in the second row centered */
+    #team .col-lg-4:nth-child(3) {
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: center;
+        /* width: 50%; */
+    }
+    #team .r-3{
+        width: 50% !important;
+    }
+
+    #footer .footer-contents{
+        & > h4{
+            font-size: 2vw;
+        }
+        & > p{
+            font-size: 2vw;
+            text-align: center;
+        }
+        & > .social > #social-p{
+            font-size: 2vw;
+        }
+        & > .img{
+            display: flex;
+            justify-content: center;
+        }
+        & > .img > img{
+            width: 40%;
+            border-radius: 5px;
+        }
+        & > .btnn > button{
+            padding: .75vw 1.5vw;
+        }
+    }
+    #footer .footer-contents ul li{
+        font-size: 2vw;
+    }
+    #footer .width50{
+        width: 50%;
+        margin: 10vw 0 5vw 0;
+    }
+    #footer .grid-it-center{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3vw;
+    }
+    #copyright .copyright-contents{
+        & > .copyright-texts{
+            padding: 4vw 0 3vw 0;
+            align-items: center;
+            & > span{
+                font-size: 1.8vw;
+            }
+        }
+        & > .copyright-texts > p{
+            font-size: 1.7vw;
+        }
+        & > .copyright-icons{
+            padding-top: 3.5vw;
+            & > ul > li > a > span{
+            font-size: 2.5vw;
+            }
+        }
+    }
+
+
+    /* faq sub navs */
+    #faq .accordion-button{
+        font-size: 2vw;
+    }
+    #faq .accordion-body{
+        font-size: 1.5vw;
+    }
+    /* faq sub navs */
+
+}
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) { 

@@ -78,7 +78,7 @@ section{
 
 /* banner section */
 #banner{
-    padding: 10vw 0;
+    padding: 8vw 0;
     background: url(../Images/faq-background.avif);
     background-attachment: fixed;
     background-position: center;
@@ -91,7 +91,7 @@ section{
     font-family: "Kanit", serif;
     font-size: clamp(25px, 0.3571rem + 4.4643vw, 120px);
     font-weight: 700;
-    margin-top: 12vw;
+    margin-top: 8vw;
 }
 /* banner section */
 
@@ -241,6 +241,7 @@ section{
     color: #fff;
     font-size: 1.6vw;
     margin-bottom: 2vw;
+    text-shadow: var(--theme-Clor2) 1px 5px 5px;
 }
 #footer .footer-contents .img img{
     width: 100%;
@@ -251,9 +252,11 @@ section{
     font-size: 1.2vw;
     font-weight: 600;
     margin-bottom: 2vw;
+    text-shadow: var(--theme-Clor2) 1px 5px 15px;
 }
 #footer .footer-contents #social-p{
     font-weight: 400;
+    text-shadow: none;
 }
 #footer .footer-contents ul li{
     list-style-type: none;
@@ -287,6 +290,7 @@ section{
         transition: .3s ease;
         &:hover{
             box-shadow: 1px 1px 15px #999;
+            border: 1px solid var(--theme-Clor1);
         }
         & > a > span{
             color: white;
